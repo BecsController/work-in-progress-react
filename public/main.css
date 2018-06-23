@@ -1,0 +1,37 @@
+
+.container{
+  background-color: white;
+}
+
+.top-box {
+  margin-top: 20px;
+}
+
+.card-image {
+  width: 300px;
+}
+
+.teacher {
+  width: 400px;
+  z-index: 1000;
+  float: left;
+  margin: 20px 0;
+}
+
+.page-template {
+  height: 700px;
+}
+
+.textarea {
+  margin-top: auto;
+  top: 67%;
+}
+
+.school-bg-img {
+  background: url('/images/backgrounds/inside-a-kindergarten-classroom-background.jpg') no-repeat center;
+  background-size: cover;
+  height: 700px;
+}
+.is-wide {
+  width: 500px;
+}
