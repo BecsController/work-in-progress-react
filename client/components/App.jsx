@@ -18,9 +18,9 @@ const App = () => {
         <Route exact path="/" component={Homepage}/>
         <Route path='/signup' component={Signup}/>
         <Route path='/users' component={Users}/>
-        <Route exact path='/stories' component={StoriesHome}/>
-        <Route path='/story/:story' component={StoryStart}/>
-        <Route path='/story/:story/one' component={StoryPageOne}/>
+        <Route path='/stories' component={StoriesHome}/>
+        <Route exact path='/story/:story' component={StoryStart}/>
+        <Route path='/story/:story/1' component={StoryPageOne}/>
         </section>
     </div>
     </Router>
