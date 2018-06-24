@@ -13,10 +13,10 @@ class StoriesPageOne extends React.Component {
     const resizeMode = 'center';
   return (
     <div className="columns is-two-thirds">
-        <div className="box column is-10 is-offset-1 page-template school-bg-img">
-          <img style={{flex: 1, resizeMode, position:'relative', zIndex:1,}} className="school-bg-img" src="/images/backgrounds/inside-a-kindergarten-classroom-background.jpg"/>
-           <div className="container is-full-height ">
+        <div className="box column is-10 is-offset-1 page-template">
               <h1 className="has-text-centered is-size-2">Beginnings</h1>
+                <img style={{flex: 1, resizeMode, position:'relative', zIndex:1,}} className="school-bg-img" src="/images/backgrounds/inside-a-kindergarten-classroom-background.jpg"/>
+                 <div className="container is-full-height ">
                 <img className="teacher" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ8TDAZZuow6x2IH-Pnhs8prAK1iolyqM8WRKKhpKv7yIDrzee" alt="teacher"/>
                   <button id="anxious" className="is-warning is-rounded button is-medium">I am feeling Anxious</button>
                   <button id="excited" className="is-warning button is-rounded is-medium is-pulled-right">I am feeling Excited</button>
@@ -27,12 +27,12 @@ class StoriesPageOne extends React.Component {
                       Your teacher comes over to introduce herself.
                       "Hi, I'm Miss Davis, what's your name?"<br></br>
                       She holds out her hand.
-                      <a className="button is-medium is-pulled-right">
+                      <Link className="button is-medium is-pulled-right" to={`/story/:story/2`}>
                         Next &nbsp;
                         <span className="icon">
                           <i className="far fa-arrow-alt-circle-right"></i>
                         </span>
-                      </a>
+                      </Link>
                     </p>
                   </div>
           </div>
