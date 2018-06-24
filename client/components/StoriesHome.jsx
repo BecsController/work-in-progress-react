@@ -72,9 +72,9 @@ class StoriesHome extends React.Component {
         <div className="columns is-multiline" id="grid">
           {this.state.stories.map(story => {
             return (
-          <div key={story.id} className="column is-3 is-3-widescreen is-flex">
+          <div key={story.key} className="column is-3 is-3-widescreen is-flex">
             <div className="card">
-              <Link to={`/${story.title}/${story.id}`}>
+              <Link to={`/${story.title}`}>
                 <div className="card-title title is-4">
                   <h3 className="has-text-grey-dark">{story.title}</h3>
               </div>

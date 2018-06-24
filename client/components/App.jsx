@@ -6,6 +6,7 @@ import Header from './Header'
 import Signup from './Signup'
 import Users from './Users'
 import StoriesHome from './StoriesHome'
+import StoryStart from './StoryStart'
 import StoryPageOne from './StoryPageOne'
 
 const App = () => {
@@ -16,7 +17,8 @@ const App = () => {
         <Route path='/' component={Header}/>
         <Route exact path="/" component={Homepage}/>
         <Route path='/stories' component={StoriesHome}/>
-        <Route path='/stories/story/one' component={StoryPageOne}/>
+        <Route path='/:story' component={StoryStart}/>
+        <Route path='/:story/one' component={StoryPageOne}/>
         <Route path='/signup' component={Signup}/>
         <Route path='/users' component={Users}/>
         </section>
