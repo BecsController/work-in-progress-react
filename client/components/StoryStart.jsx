@@ -13,9 +13,9 @@ const StoryStart = (props) =>{
             </figure>
           </div>
 
-          <Link className="button is-primary is-rounded is-outlined is-large" to={`/${props.match.params.story}/1`}>
-        <i className="fas fa-play"></i>&nbsp;Click here to start
-      </Link>
+          <Link className="button is-primary is-rounded is-outlined is-large" to={`/story/${props.match.params.story}/1`}>
+            <i className="fas fa-play"></i>&nbsp;Click here to start
+          </Link>
       </div>
 
     </div>

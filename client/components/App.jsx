@@ -16,11 +16,11 @@ const App = () => {
         <section className="section hero is-fullheight has-text-centered is-link is-bold">
         <Route path='/' component={Header}/>
         <Route exact path="/" component={Homepage}/>
-        <Route path='/stories' component={StoriesHome}/>
-        <Route path='/:story' component={StoryStart}/>
-        <Route path='/:story/one' component={StoryPageOne}/>
         <Route path='/signup' component={Signup}/>
         <Route path='/users' component={Users}/>
+        <Route exact path='/stories' component={StoriesHome}/>
+        <Route path='/story/:story' component={StoryStart}/>
+        <Route path='/story/:story/one' component={StoryPageOne}/>
         </section>
     </div>
     </Router>
