@@ -26,6 +26,18 @@ class Users extends React.Component {
         name: 'Wrap?',
         email: 'Betterwrap@wrappy.com',
         avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPuAFRbwsYkt_ve73zrqEEJ02PlX2ewbHZGy0u1a99h401lN0Kw'
+      },{
+        name: 'Gwen Stacey',
+        email: 'gwen@webslinger.com',
+        avatar: 'https://i.pinimg.com/736x/49/0f/2c/490f2c41d5768057a5a1f4022da39b7a--spider-girl-spider-man.jpg'
+      },{
+        name: 'Someone',
+        email: 'someone@something.com',
+        avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfADPGxXZ7uO55VJ-lfuy1TCnC5kTSEl9kxbCs6sZQpectoUcCyg'
+      },{
+        name: 'This Guy',
+        email: 'thisguy@emo.com',
+        avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBgjEuBiheyCvpEWXSZr550b0wwZ8bjyAn2-kL80o8A0u_0nkHQ'
       }]
     }
     this.addUser = this.addUser.bind(this)
@@ -44,7 +56,7 @@ class Users extends React.Component {
 
   return (
     <div>
-        <div className="column box is-10 is-offset-1">
+        <div className="column top-box box is-10 is-offset-1">
             <h1 className="has-text-centered is-size-1 has-text-grey">
               Choose your profile
             </h1>
@@ -63,15 +75,14 @@ class Users extends React.Component {
                       </div>
 
                       <div className="box card-image">
-                        <figure className="image is-4by5">
+                        <figure className="image is-1by1">
                           <img src={item.avatar} alt={item.name}/>
                         </figure>
                       </div>
                     </Link>
                   </div>
                 </div>
-              )
-              })}
+              )})}
         </div>
       </div>
 
@@ -80,7 +91,6 @@ class Users extends React.Component {
           <h3 className="has-text-centered is-size-1 has-text-grey">Footer heading</h3>
         </div>
         </div>
-
     </div>
   )
  }
